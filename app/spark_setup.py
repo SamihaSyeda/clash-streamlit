@@ -13,8 +13,7 @@ def setup_spark():
     from pyspark.sql import SparkSession
 
     spark = SparkSession.builder \
-        .appName("TestClashData") \
-        .master("local[*]") \
+        .appName("ClashData") \
         .getOrCreate()
         
     spark.catalog.clearCache()
