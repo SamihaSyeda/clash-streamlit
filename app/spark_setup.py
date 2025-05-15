@@ -6,8 +6,8 @@ def setup_spark():
     # os.environ["SPARK_HOME"] = "C:\pyspark\spark-3.5.5"
 
     # Using findspark to locate spark
-    import findspark
-    findspark.init()
+    # import findspark
+    # findspark.init()
     
     # Creating a pyspark session
     from pyspark.sql import SparkSession
