@@ -80,15 +80,6 @@ def calculate_number_of_battles(filtered_df):
     
     return number_of_battles
 
-# def calculate_most_used_card(filtered_df):
-#     """Calculate the average age of passengers."""
-#     return filtered_df["Age"].mean()
-
-
-# def calculate_least_used_card(filtered_df):
-#     """Calculate the survival rate by gender."""
-#     return filtered_df.groupby("Sex", observed=False)["Survived"].mean()
-
 
 def display_metrics(filtered_df):
     """Display key metrics in Streamlit."""
@@ -99,17 +90,17 @@ def display_metrics(filtered_df):
     
     col4, col5, col6 = st.columns(3, vertical_alignment="center")
     with col4:
-        crown = Image.open("app/images/crown_resized.png")
+        crown = Image.open("images/crown_resized.png")
         crown = crown.resize((70, 70))
         st.image(crown)
         
     with col5:
-        king = Image.open("app/images/blue_king.png")
+        king = Image.open("images/blue_king.png")
         king = king.resize((72, 80))
         st.image(king)
         
     with col6:
-        trophy = Image.open("app/images/trophy.png")
+        trophy = Image.open("images/trophy.png")
         trophy = trophy.resize((75, 75))
         st.image(trophy)
         
