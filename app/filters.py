@@ -16,43 +16,43 @@ def filter_dataframe(df, league_filter):
 def add_league_image(league):
     
     if league == "Challenger I":
-        icon = Image.open("app/images/challenger_I.png")
+        icon = Image.open("images/challenger_I.png")
         icon.resize((50, 50))
         
     elif league == "Challenger II":
-        icon = Image.open("app/images/challenger_II.png")
+        icon = Image.open("images/challenger_II.png")
         icon.resize((50, 50))
         
     elif league == "Challenger III":
-        icon = Image.open("app/images/challenger_III.png")
+        icon = Image.open("images/challenger_III.png")
         icon.resize((50, 50))
     
     elif league == "Master I":
-        icon = Image.open("app/images/master_I.png")
+        icon = Image.open("images/master_I.png")
         icon.resize((50, 50))
         
     elif league == "Master II":
-        icon = Image.open("app/images/master_II.png")
+        icon = Image.open("images/master_II.png")
         icon.resize((50, 50))
     
     elif league == "Master III":
-        icon = Image.open("app/images/master_III.png")
+        icon = Image.open("images/master_III.png")
         icon.resize((50, 50))
     
     elif league == "Champion":
-        icon = Image.open("app/images/champion.png")
+        icon = Image.open("images/champion.png")
         icon.resize((50, 50))
         
     elif league == "Grand Champion":
-        icon = Image.open("app/images/grand_champion.png")
+        icon = Image.open("images/grand_champion.png")
         icon.resize((50, 50))
         
     elif league == "Royal Champion":
-        icon = Image.open("app/images/royal_champion.png")
+        icon = Image.open("images/royal_champion.png")
         icon.resize((50, 50))
         
     elif league == "Ultimate Champion":
-        icon = Image.open("app/images/ultimate_champion.png")
+        icon = Image.open("images/ultimate_champion.png")
         icon.resize((50, 50))
         
     st.sidebar.image(icon)
