@@ -48,7 +48,6 @@ plotly==6.0.1
 prompt_toolkit==3.0.51
 protobuf==6.30.2
 psutil==7.0.0
-psycopg==3.2.9
 psycopg-binary==3.2.9
 pure_eval==0.2.3
 py4j==0.10.9.7
