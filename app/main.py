@@ -3,7 +3,6 @@ from PIL import Image
 from clean import load_and_clean_data
 from filters import apply_filter
 from visuals import display_metrics, display_visualisations
-import clean
 import os
 
 def main():
@@ -35,7 +34,7 @@ def main():
     filepath_data = os.path.join(os.path.dirname(__file__),
         "data/raw/battles.csv")
     # Load and clean the data
-    clash_df = clean.load_and_clean_data(filepath_data)
+    clash_df = load_and_clean_data(filepath_data)
 
     # Apply filter
     filtered_df = apply_filter(clash_df)
